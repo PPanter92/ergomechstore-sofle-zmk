@@ -23,7 +23,7 @@
 
         adjust_layer {
             if-layers = <6 6>;
-            then-layer = <2>;
+            then-layer = <5>;
         };
     };
 
@@ -53,14 +53,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BS_TAB";
             #binding-cells = <0>;
-            bindings = <&lt 0 BACKSPACE>;
+            bindings = <&lt 4 BACKSPACE>;
         };
 
         rt_NAV: rt_NAV {
             compatible = "zmk,behavior-tap-dance";
             label = "RT_NAV";
             #binding-cells = <0>;
-            bindings = <&lt 0 RET>, <&kp RET>;
+            bindings = <&lt 6 RET>, <&kp RET>;
         };
     };
 
@@ -81,31 +81,11 @@
 &kp GRAVE  &kp N1                &kp N2    &kp N3    &kp N4     &kp N5                                 &kp N6     &kp N7   &kp N8    &kp N9     &kp N0      &kp DELETE
 &kp TAB    &kp Q                 &kp W     &kp E     &kp R      &kp T                                  &kp Y      &kp U    &kp I     &kp O      &kp P       &kp BSPC
 &kp CAPS   &kp A                 &kp S     &kp D     &kp F      &kp G                                  &kp H      &kp J    &kp K     &kp L      &kp SEMI    &kp SQT
-&kp LCTRL  &kp NON_US_BACKSLASH  &kp Z     &kp X     &kp C      &kp V           &kp K_MUTE    &mo 4    &kp B      &kp N    &kp M     &kp COMMA  &kp PERIOD  &kp SLASH
-                                 &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &mo 3         &bs_TAB  &kp SPACE  &rt_NAV  &kp RALT  &kp RGUI
+&kp LCTRL  &kp NON_US_BACKSLASH  &kp Z     &kp X     &kp C      &kp V           &kp K_MUTE    &mo 2    &kp B      &kp N    &kp M     &kp COMMA  &kp PERIOD  &kp SLASH
+                                 &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &mo 1         &bs_TAB  &kp SPACE  &rt_NAV  &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-        };
-
-        tab {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans             &trans      &trans       &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(LC(PG_UP))  &lm 2 LALT  &kp K_APP    &trans     &kp LA(F4)
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(LC(TAB))    &trans      &kp LC(TAB)  &kp LG(D)  &kp LC(W)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans      &trans       &trans     &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans      &trans
-            >;
-        };
-
-        tab2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(TAB)  &trans  &kp TAB  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans  &trans   &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans  &trans
-            >;
         };
 
         lower_layer {
@@ -166,6 +146,26 @@
 &none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
 &none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
+            >;
+        };
+
+        tab {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans             &trans      &trans       &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(LC(PG_UP))  &lm 5 LALT  &kp K_APP    &trans     &kp LA(F4)
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(LC(TAB))    &trans      &kp LC(TAB)  &kp LG(D)  &kp LC(W)
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans      &trans       &trans     &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans      &trans
+            >;
+        };
+
+        tab2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(TAB)  &trans  &kp TAB  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans  &trans   &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans  &trans
             >;
         };
 

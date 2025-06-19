@@ -22,8 +22,8 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <6 6>;
-            then-layer = <5>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
@@ -42,7 +42,7 @@
                 <&macro_release>,
                 <&kp MACRO_PLACEHOLDER &macro_param_1to1>,
                 <&macro_release>,
-                <&mo MACRO_PLACEHOLDER &kp>;
+                <&mo MACRO_PLACEHOLDER>;
 
             label = "LM";
         };

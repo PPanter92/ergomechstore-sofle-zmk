@@ -46,6 +46,97 @@
 
             label = "LM";
         };
+
+        curly: curly {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &kp RA(N9) &kp LEFT>;
+            label = "CURLY";
+        };
+
+        paran: paran {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N8) &kp LS(N0) &kp LEFT>;
+            label = "PARAN";
+        };
+
+        angle: angle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NON_US_BACKSLASH &kp LS(NON_US_BACKSLASH) &kp LEFT>;
+            label = "angle";
+        };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N8) &kp RA(N9) &kp LEFT>;
+            label = "BRACKETS";
+        };
+
+        abs: abs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(NON_US_BACKSLASH) &kp RA(NON_US_BACKSLASH) &kp LEFT>;
+            label = "ABS";
+        };
+
+        comO: comO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N7) &kp LS(RIGHT_BRACKET)>;
+            label = "COMO";
+        };
+
+        comC: comC {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(RIGHT_BRACKET) &kp LS(N7)>;
+            label = "COMC";
+        };
+
+        code: code {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(EQUAL) &kp LS(EQUAL) &kp LS(EQUAL) &kp SPACE>;
+            label = "CODE";
+        };
+
+        quote: quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N2) &kp LS(N2) &kp LEFT>;
+            label = "QUOTE";
+        };
+
+        squote: squote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NON_US_HASH) &kp LS(NON_US_HASH) &kp LEFT>;
+            label = "SQUOTE";
+        };
+
+        max: max {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(SPACE) &kp X>;
+            label = "MAX";
+        };
+
+        min: min {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(SPACE) &kp N>;
+            label = "MIN";
+        };
+
+        res: res {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(SPACE) &kp R>;
+            label = "RES";
+        };
     };
 
     behaviors {
@@ -53,14 +144,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BS_TAB";
             #binding-cells = <0>;
-            bindings = <&lt 4 BACKSPACE>;
+            bindings = <&lt 4 BACKSPACE>, <&kp BACKSPACE>;
         };
 
         rt_NAV: rt_NAV {
             compatible = "zmk,behavior-tap-dance";
             label = "RT_NAV";
             #binding-cells = <0>;
-            bindings = <&lt 6 RET>, <&kp RET>;
+            bindings = <&lt 7 RET>, <&kp RET>;
         };
     };
 
@@ -78,11 +169,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1                &kp N2    &kp N3    &kp N4     &kp N5                                 &kp N6     &kp N7   &kp N8    &kp N9     &kp N0      &kp DELETE
-&kp TAB    &kp Q                 &kp W     &kp E     &kp R      &kp T                                  &kp Y      &kp U    &kp I     &kp O      &kp P       &kp BSPC
-&kp CAPS   &kp A                 &kp S     &kp D     &kp F      &kp G                                  &kp H      &kp J    &kp K     &kp L      &kp SEMI    &kp SQT
-&kp LCTRL  &kp NON_US_BACKSLASH  &kp Z     &kp X     &kp C      &kp V           &kp K_MUTE    &mo 2    &kp B      &kp N    &kp M     &kp COMMA  &kp PERIOD  &kp SLASH
-                                 &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &mo 1         &bs_TAB  &kp SPACE  &rt_NAV  &kp RALT  &kp RGUI
+&kp GRAVE      &kp N1                &kp N2  &kp N3        &kp N4     &kp N5                                 &kp N6     &kp N7   &kp N8     &kp N9     &kp N0      &kp DELETE
+&kp TAB        &kp Q                 &kp W   &kp E         &kp R      &kp T                                  &kp Y      &kp U    &kp I      &kp O      &kp P       &kp BSPC
+&kp CAPS       &kp A                 &kp S   &kp D         &kp F      &kp G                                  &kp H      &kp J    &kp K      &kp L      &kp SEMI    &kp SQT
+&kp RIGHT_ALT  &kp NON_US_BACKSLASH  &kp Z   &kp X         &kp C      &kp V           &kp K_MUTE    &mo 2    &kp B      &kp N    &kp M      &kp COMMA  &kp PERIOD  &kp SLASH
+                                     &mo 1   &kp LEFT_GUI  &kp LCTRL  &kp LEFT_SHIFT  &mo 6         &bs_TAB  &kp SPACE  &rt_NAV  &kp LCTRL  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -152,11 +243,13 @@
         tab {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans             &trans      &trans       &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(LC(PG_UP))  &lm 5 LALT  &kp K_APP    &trans     &kp LA(F4)
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(LC(TAB))    &trans      &kp LC(TAB)  &kp LG(D)  &kp LC(W)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans      &trans       &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &max    &kp LS(LC(PG_UP))  &lm 5 LALT  &kp K_APP    &trans     &kp LA(F4)
+&trans  &trans  &trans  &trans  &trans  &trans                    &res    &kp LS(LC(TAB))    &trans      &kp LC(TAB)  &kp LG(D)  &kp LC(W)
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &min    &trans             &trans      &trans       &trans     &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans      &trans
             >;
+
+            label = "tab";
         };
 
         tab2 {
@@ -167,6 +260,20 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans  &trans   &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans  &trans
             >;
+
+            label = "tab2";
+        };
+
+        symbols {
+            bindings = <
+&trans  &trans  &trans             &trans  &trans  &trans                    &trans         &paran     &kp RS(RIGHT_BRACKET)  &trans         &trans  &trans
+&trans  &trans  &trans             &trans  &trans  &trans                    &kp RA(MINUS)  &angle     &kp LS(N0)             &kp LS(MINUS)  &comO   &comC
+&trans  &trans  &kp LS(LA(MINUS))  &trans  &trans  &trans                    &abs           &curly     &kp RA(N7)             &kp RA(N9)     &quote  &squote
+&trans  &trans  &trans             &trans  &trans  &trans  &trans    &trans  &trans         &brackets  &kp LA(N8)             &kp LA(N9)     &trans  &trans
+                &trans             &trans  &trans  &trans  &trans    &trans  &trans         &trans     &trans                 &trans
+            >;
+
+            label = "symbols";
         };
 
         nav {
@@ -177,6 +284,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans        &trans        &trans         &trans    &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans        &trans        &trans
             >;
+
+            label = "nav";
         };
     };
 };

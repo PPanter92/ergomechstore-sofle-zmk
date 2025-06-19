@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
   default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, '[', CAPS, A, S, D, F, G, H, J, K, L, ;, '''', RIGHT ALT,
-    \, Z, X, C, V, lower, raise, B, N, M, ',', ., /, ESC, LEFT GUI, LALT, LEFT SHIFT, symbols, '&bs_TAB', SPACE, '&rt_NAV', LCTRL, INS]
+    \, Z, X, C, V, MUTE, '&mkp MB3', B, N, M, ',', ., /, lower, LEFT GUI, LCTRL, LEFT SHIFT, symbols, '&bs_TAB', SPACE, '&rt_NAV', LEFT ALT, raise]
   lower:
   - '&studio_unlock'
   - F1
@@ -45,7 +45,7 @@ layers:
   - KP PLUS
   - '{'
   - '}'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '['
   - ']'
@@ -53,7 +53,7 @@ layers:
   - ':'
   - \
   - {t: ▽, type: trans}
-  - '&studio_unlock'
+  - {t: '&studio_unlock', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -107,23 +107,23 @@ layers:
   - PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
@@ -167,7 +167,14 @@ layers:
   - ''
   - ''
   - ''
-  - {t: RGB TOG, type: held}
+  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
   - ''
   - ''
@@ -177,14 +184,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {type: held}
   tab:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -316,8 +316,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&paran'
-  - Sft+]
-  - {t: ▽, type: trans}
+  - '&code'
+  - AltGr+]
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -334,14 +334,14 @@ layers:
   - '&comC'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+Alt+-
+  - Sft+AltGr+-
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&abs'
   - '&curly'
   - AltGr+7
-  - AltGr+9
+  - AltGr+0
   - '&quote'
   - '&squote'
   - {t: ▽, type: trans}
@@ -354,8 +354,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&brackets'
-  - Alt+8
-  - Alt+9
+  - AltGr+8
+  - AltGr+9
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -376,8 +376,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+AC HOME
-  - {t: ▽, type: trans}
+  - Ctl+HOME
+  - APPLICATION
   - Ctl+END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -387,7 +387,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - AC HOME
+  - HOME
   - Ctl+LEFT
   - UP ARROW
   - Ctl+RIGHT

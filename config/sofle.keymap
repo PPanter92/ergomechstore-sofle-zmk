@@ -145,6 +145,8 @@
             label = "BS_TAB";
             #binding-cells = <0>;
             bindings = <&lt 4 BACKSPACE>, <&kp BACKSPACE>;
+
+            tapping-term-ms = <50>;
         };
 
         rt_NAV: rt_NAV {
@@ -152,6 +154,8 @@
             label = "RT_NAV";
             #binding-cells = <0>;
             bindings = <&lt 7 RET>, <&kp RET>;
+
+            tapping-term-ms = <50>;
         };
     };
 
@@ -169,14 +173,16 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp N1                &kp N2  &kp N3        &kp N4     &kp N5                                 &kp N6     &kp N7   &kp N8     &kp N9     &kp N0      &kp DELETE
-&kp TAB        &kp Q                 &kp W   &kp E         &kp R      &kp T                                  &kp Y      &kp U    &kp I      &kp O      &kp P       &kp BSPC
-&kp CAPS       &kp A                 &kp S   &kp D         &kp F      &kp G                                  &kp H      &kp J    &kp K      &kp L      &kp SEMI    &kp SQT
-&kp RIGHT_ALT  &kp NON_US_BACKSLASH  &kp Z   &kp X         &kp C      &kp V           &kp K_MUTE    &mo 2    &kp B      &kp N    &kp M      &kp COMMA  &kp PERIOD  &kp SLASH
-                                     &mo 1   &kp LEFT_GUI  &kp LCTRL  &kp LEFT_SHIFT  &mo 6         &bs_TAB  &kp SPACE  &rt_NAV  &kp LCTRL  &kp RGUI
+&kp GRAVE      &kp N1                &kp N2   &kp N3        &kp N4    &kp N5                            &kp N6     &kp N7   &kp N8     &kp N9     &kp N0      &kp MINUS
+&kp TAB        &kp Q                 &kp W    &kp E         &kp R     &kp T                             &kp Y      &kp U    &kp I      &kp O      &kp P       &kp LEFT_BRACKET
+&kp CAPS       &kp A                 &kp S    &kp D         &kp F     &kp G                             &kp H      &kp J    &kp K      &kp L      &kp SEMI    &kp SQT
+&kp RIGHT_ALT  &kp NON_US_BACKSLASH  &kp Z    &kp X         &kp C     &kp V           &mo 1    &mo 2    &kp B      &kp N    &kp M      &kp COMMA  &kp PERIOD  &kp SLASH
+                                     &kp ESC  &kp LEFT_GUI  &kp LALT  &kp LEFT_SHIFT  &mo 6    &bs_TAB  &kp SPACE  &rt_NAV  &kp LCTRL  &kp INS
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         lower_layer {
@@ -266,11 +272,11 @@
 
         symbols {
             bindings = <
-&trans  &trans  &trans             &trans  &trans  &trans                    &trans         &paran     &kp RS(RIGHT_BRACKET)  &trans         &trans  &trans
-&trans  &trans  &trans             &trans  &trans  &trans                    &kp RA(MINUS)  &angle     &kp LS(N0)             &kp LS(MINUS)  &comO   &comC
-&trans  &trans  &kp LS(LA(MINUS))  &trans  &trans  &trans                    &abs           &curly     &kp RA(N7)             &kp RA(N9)     &quote  &squote
-&trans  &trans  &trans             &trans  &trans  &trans  &trans    &trans  &trans         &brackets  &kp LA(N8)             &kp LA(N9)     &trans  &trans
-                &trans             &trans  &trans  &trans  &trans    &trans  &trans         &trans     &trans                 &trans
+&trans  &trans  &trans             &trans  &trans  &trans                     &trans         &paran     &kp RS(RIGHT_BRACKET)  &trans         &trans  &trans
+&trans  &trans  &trans             &trans  &trans  &trans                     &kp RA(MINUS)  &angle     &kp LS(N0)             &kp LS(MINUS)  &comO   &comC
+&trans  &trans  &kp LS(LA(MINUS))  &trans  &trans  &trans                     &abs           &curly     &kp RA(N7)             &kp RA(N9)     &quote  &squote
+&trans  &trans  &trans             &trans  &trans  &trans  &trans    &trans   &trans         &brackets  &kp LA(N8)             &kp LA(N9)     &trans  &trans
+                &trans             &trans  &trans  &trans  &trans    &kp DEL  &trans         &trans     &trans                 &trans
             >;
 
             label = "symbols";
@@ -278,11 +284,11 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans        &trans        &trans         &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LC(LEFT)  &kp UP_ARROW  &kp LC(RIGHT)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT      &kp LS(TAB)   &kp RIGHT      &kp DOWN  &kp TAB
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans        &trans        &trans         &trans    &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans         &kp LC(C_AC_HOME)  &trans        &kp LC(END)    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp C_AC_HOME  &kp LC(LEFT)       &kp UP_ARROW  &kp LC(RIGHT)  &kp END    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp PG_UP      &kp LEFT           &kp LS(TAB)   &kp RIGHT      &kp DOWN   &kp TAB
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PG_DN      &kp LC(A)          &kp LC(X)     &kp LC(C)      &kp LC(V)  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans             &trans        &trans
             >;
 
             label = "nav";

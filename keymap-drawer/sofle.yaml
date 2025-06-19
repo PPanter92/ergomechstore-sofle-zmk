@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, CAPS, A, S, D, F, G, H, J, K, L, ;, '''', RIGHT
-      ALT, \, Z, X, C, V, MUTE, raise, B, N, M, ',', ., /, lower, LEFT GUI, LCTRL, LEFT SHIFT, symbols, '&bs_TAB', SPACE, '&rt_NAV', LCTRL, RGUI]
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, '[', CAPS, A, S, D, F, G, H, J, K, L, ;, '''', RIGHT ALT,
+    \, Z, X, C, V, lower, raise, B, N, M, ',', ., /, ESC, LEFT GUI, LALT, LEFT SHIFT, symbols, '&bs_TAB', SPACE, '&rt_NAV', LCTRL, INS]
   lower:
   - '&studio_unlock'
   - F1
@@ -45,7 +45,7 @@ layers:
   - KP PLUS
   - '{'
   - '}'
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - '['
   - ']'
@@ -53,7 +53,7 @@ layers:
   - ':'
   - \
   - {t: ▽, type: trans}
-  - {t: '&studio_unlock', type: held}
+  - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -167,7 +167,7 @@ layers:
   - ''
   - ''
   - ''
-  - RGB TOG
+  - {t: RGB TOG, type: held}
   - {type: held}
   - ''
   - ''
@@ -175,7 +175,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
@@ -363,7 +363,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -376,6 +376,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Ctl+AC HOME
+  - {t: ▽, type: trans}
+  - Ctl+END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -384,13 +387,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - AC HOME
   - Ctl+LEFT
   - UP ARROW
   - Ctl+RIGHT
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -398,8 +399,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PG UP
   - LEFT
   - Sft+TAB
   - RIGHT
@@ -413,11 +413,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PG DN
+  - Ctl+A
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

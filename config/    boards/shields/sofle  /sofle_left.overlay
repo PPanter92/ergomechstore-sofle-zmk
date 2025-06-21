@@ -21,12 +21,11 @@
     status = "okay";
 };
 
- key_switch_0: key_switch_0 {
-        gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
-        label = "EXTRA_0";
-    };
 
-    key_switch_1: key_switch_1 {
-        gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
-        label = "EXTRA_1";
+
+ {
+    key_switch_l0: key_switch_l0 {
+        gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
+        label = "EXTRA_L0";
     };
+};

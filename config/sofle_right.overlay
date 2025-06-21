@@ -24,12 +24,12 @@
     status = "okay";
 };
 
- key_switch_0: key_switch_0 {
+ key_switch_0: key_switch_2 {
         gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
         label = "EXTRA_0";
     };
 
-    key_switch_1: key_switch_1 {
+    key_switch_1: key_switch_3 {
         gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
         label = "EXTRA_1";
     };

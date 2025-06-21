@@ -23,4 +23,14 @@
 
 &right_encoder {
     status = "okay";
+
+
+{
+    key_switch_r0: key_switch_r0 {
+        gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+        label = "EXTRA_R0";
+    };
+};
+
+
 };

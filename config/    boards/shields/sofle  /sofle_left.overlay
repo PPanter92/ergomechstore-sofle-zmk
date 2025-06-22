@@ -24,9 +24,4 @@
 
 
 
- {
-    key_switch_l0: key_switch_l0 {
-        gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
-        label = "EXTRA_L0";
-    };
 };

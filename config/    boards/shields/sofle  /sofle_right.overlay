@@ -7,7 +7,7 @@
 #include "sofle.dtsi"
 
 &default_transform {
-    col-offset = <6>;
+    col-offset = <7>;
 };
 
 &kscan0 {
@@ -25,12 +25,7 @@
     status = "okay";
 
 
-{
-    key_switch_r0: key_switch_r0 {
-        gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
-        label = "EXTRA_R0";
-    };
-};
+
 
 
 };

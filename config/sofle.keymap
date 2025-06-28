@@ -16,6 +16,8 @@
 #define RAISE 2
 #define ADJUST 3
 
+&lt { flavor = "balanced"; };
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -145,21 +147,21 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BS_TAB";
             #binding-cells = <0>;
-            bindings = <&MOT 4 BACKSPACE>, <&kp BACKSPACE>;
+            bindings = <&MOT 5 BACKSPACE>, <&kp BACKSPACE>;
         };
 
         rt_NAV: rt_NAV {
             compatible = "zmk,behavior-tap-dance";
             label = "RT_NAV";
             #binding-cells = <0>;
-            bindings = <&MOT 7 RET>, <&kp RET>;
+            bindings = <&MOT 8 RET>, <&kp RET>;
         };
 
         del_SYM: del_SYM {
             compatible = "zmk,behavior-tap-dance";
             label = "DEL_SYM";
             #binding-cells = <0>;
-            bindings = <&MOT 6 DEL>, <&kp DEL>;
+            bindings = <&MOT 7 DEL>, <&kp DEL>;
         };
 
         holdTap: holdTap {
@@ -246,7 +248,7 @@
 &kp TAB        &kp Q                 &kp W              &kp E           &kp R            &kp T                                          &kp Y      &kp U            &kp I           &kp O              &kp P                  &kp LEFT_BRACKET
 &kp CAPS       &HRM_R LGUI A         &HRM_R LEFT_ALT S  &HRM_R LCTRL D  &HRM_R LSHIFT F  &kp G                                          &kp H      &HRM_L RSHIFT J  &HRM_L RCTRL K  &HRM_L LEFT_ALT L  &HRM_L RGUI SEMICOLON  &kp SQT
 &kp RIGHT_ALT  &kp NON_US_BACKSLASH  &kp Z              &kp X           &kp C            &kp V           &kp K_MUTE    &mkp MB3         &kp B      &kp N            &kp M           &kp COMMA          &kp PERIOD             &kp SLASH
-                                     &mo 1              &kp LEFT_GUI    &kp LCTRL        &kp LEFT_SHIFT  &del_SYM      &lt 4 BACKSPACE  &kp SPACE  &MOT 7 ENTER     &kp LEFT_ALT    &mo 2
+                                     &mo 1              &kp LEFT_GUI    &kp LCTRL        &kp LEFT_SHIFT  &del_SYM      &lt 5 BACKSPACE  &kp SPACE  &MOT 8 ENTER     &kp LEFT_ALT    &mo 2
             >;
 
             sensor-bindings =
@@ -315,10 +317,22 @@
             >;
         };
 
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                      &trans          &trans          &trans        &trans           &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &trans          &msc SCRL_LEFT  &mmv MOVE_UP  &msc SCRL_RIGHT  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &msc SCRL_UP    &mmv MOVE_LEFT  &trans        &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &msc SCRL_DOWN  &trans          &trans        &trans           &trans          &trans
+                &trans  &trans  &trans  &trans  &trans    &mkp MB3  &mkp MB1        &mkp MB2        &trans        &trans
+            >;
+
+            label = "mouse";
+        };
+
         tab {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1           &mkp MB3    &mkp MB2     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &max    &kp LS(LC(PG_UP))  &lm 5 LALT  &kp K_APP    &trans     &kp LA(F4)
+&trans  &trans  &trans  &trans  &trans  &trans                    &max    &kp LS(LC(PG_UP))  &lm 6 LALT  &kp K_APP    &trans     &kp LA(F4)
 &trans  &trans  &trans  &trans  &trans  &trans                    &res    &kp LS(LC(TAB))    &trans      &kp LC(TAB)  &kp LG(D)  &kp LC(W)
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &min    &trans             &trans      &trans       &trans     &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans      &trans

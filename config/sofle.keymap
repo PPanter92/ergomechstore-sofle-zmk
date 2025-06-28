@@ -152,7 +152,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             flavor = "hold-preferred";
-            hold-trigger-key-positions = <20>;
+            hold-trigger-key-positions = <20 32>;
         };
 
         HRM_L: HRM_L {
@@ -307,11 +307,11 @@
 
         tab {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1           &mkp MB3    &mkp MB2     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &max    &kp LS(LC(PG_UP))  &lm 6 LALT  &kp K_APP    &trans     &kp LA(F4)
-&trans  &trans  &trans  &trans  &trans  &trans                    &res    &kp LS(LC(TAB))    &trans      &kp LC(TAB)  &kp LG(D)  &kp LC(W)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &min    &trans             &trans      &trans       &trans     &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1           &mkp MB3     &mkp MB2     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &max    &kp LS(LC(PG_UP))  &lm 6 LALT   &kp K_APP    &trans     &kp LA(F4)
+&trans  &trans  &trans  &trans  &trans  &trans                    &res    &kp LS(LC(TAB))    &kp LA(TAB)  &kp LC(TAB)  &kp LG(D)  &kp LC(W)
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &min    &trans             &trans       &trans       &trans     &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans       &trans
             >;
 
             label = "tab";

@@ -17,7 +17,7 @@
 #define ADJUST 3
 
 &lt {
-    flavor = "balanced";
+    flavor = "hold-preferred";
     hold-while-undecided;
 };
 

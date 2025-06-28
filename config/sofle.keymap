@@ -152,7 +152,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             flavor = "hold-preferred";
-            hold-trigger-key-positions = <20 32>;
+            hold-trigger-key-positions = <20 32 18 30 44 19 31 33 34 7 9 8 21 23 35>;
         };
 
         HRM_L: HRM_L {
@@ -224,7 +224,7 @@
 &kp TAB        &kp Q                 &kp W              &kp E           &kp R            &kp T                                                 &kp Y      &kp U            &kp I           &kp O              &kp P                  &kp LEFT_BRACKET
 &kp CAPS       &HRM_R LGUI A         &HRM_R LEFT_ALT S  &HRM_R LCTRL D  &HRM_R LSHIFT F  &kp G                                                 &kp H      &HRM_L RSHIFT J  &HRM_L RCTRL K  &HRM_L LEFT_ALT L  &HRM_L RGUI SEMICOLON  &kp SQT
 &kp RIGHT_ALT  &kp NON_US_BACKSLASH  &kp Z              &kp X           &kp C            &kp V           &kp K_MUTE      &mkp MB3              &kp B      &kp N            &kp M           &kp COMMA          &kp PERIOD             &kp SLASH
-                                     &mo 1              &kp LEFT_GUI    &MoTap 4 ESC     &kp LEFT_SHIFT  &MoTap 7 DEL    &MoTapHp 5 BACKSPACE  &kp SPACE  &MoTap 8 ENTER   &kp LEFT_ALT    &mo 2
+                                     &mo 1              &kp ESC         &MoTap 4 LGUI    &kp LEFT_SHIFT  &MoTap 7 DEL    &MoTapHp 5 BACKSPACE  &kp SPACE  &MoTap 8 ENTER   &kp LEFT_ALT    &mo 2
             >;
 
             sensor-bindings =
@@ -295,11 +295,11 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans          &trans          &trans        &trans           &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans          &msc SCRL_LEFT  &mmv MOVE_UP  &msc SCRL_RIGHT  &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                      &msc SCRL_UP    &mmv MOVE_LEFT  &trans        &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &msc SCRL_DOWN  &trans          &trans        &trans           &trans          &trans
-                &trans  &trans  &trans  &trans  &trans    &mkp MB3  &mkp MB1        &mkp MB2        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &msc SCRL_LEFT   &trans          &trans        &trans           &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &msc SCRL_RIGHT  &msc SCRL_LEFT  &mmv MOVE_UP  &msc SCRL_RIGHT  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &msc SCRL_UP     &mmv MOVE_LEFT  &trans        &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &msc SCRL_DOWN   &trans          &trans        &trans           &trans          &trans
+                &trans  &trans  &trans  &trans  &trans    &mkp MB3  &mkp MB1         &mkp MB2        &trans        &trans
             >;
 
             label = "mouse";

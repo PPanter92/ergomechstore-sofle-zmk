@@ -16,7 +16,10 @@
 #define RAISE 2
 #define ADJUST 3
 
-&lt { flavor = "balanced"; };
+&lt {
+    flavor = "balanced";
+    hold-while-undecided;
+};
 
 / {
     // Activate ADJUST layer by pressing raise and lower
@@ -161,7 +164,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DEL_SYM";
             #binding-cells = <0>;
-            bindings = <&lt 6 DEL>, <&kp RET>;
+            bindings = <&lt 6 DEL>, <&kp DEL>;
         };
 
         holdTap: holdTap {

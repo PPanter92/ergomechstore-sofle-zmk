@@ -1,7 +1,66 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, '[', CAPS, A, S, D, F, G, H, J, K, L, ;, '''', RIGHT ALT,
-    \, Z, X, C, V, MUTE, '&mkp MB3', B, N, M, ',', ., /, lower, LEFT GUI, LCTRL, LEFT SHIFT, '&del_SYM', '&bs_TAB', SPACE, '&rt_NAV', LEFT ALT, raise]
+  default:
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - CAPS
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - {t: J, h: LEFT SHIFT}
+  - K
+  - L
+  - ;
+  - ''''
+  - RIGHT ALT
+  - \
+  - Z
+  - X
+  - C
+  - V
+  - MUTE
+  - '&mkp MB3'
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - lower
+  - LEFT GUI
+  - LCTRL
+  - LEFT SHIFT
+  - '&del_SYM'
+  - '&bs_TAB'
+  - SPACE
+  - '&rt_NAV'
+  - LEFT ALT
+  - raise
   lower:
   - '&studio_unlock'
   - F1

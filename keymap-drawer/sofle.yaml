@@ -58,7 +58,7 @@ layers:
   - '&del_SYM'
   - {t: BACKSPACE, h: tab}
   - SPACE
-  - '&rt_NAV'
+  - {t: ENTER, h: nav}
   - LEFT ALT
   - raise
   lower:
@@ -485,7 +485,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:

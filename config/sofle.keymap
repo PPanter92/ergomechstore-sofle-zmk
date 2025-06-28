@@ -17,7 +17,7 @@
 #define ADJUST 3
 
 &lt {
-    tapping-term-ms = <50>;
+    tapping-term-ms = <175>;
     flavor = "balanced";
     quick-tap-ms = <40>;
 };

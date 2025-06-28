@@ -53,9 +53,9 @@ layers:
   - /
   - lower
   - LEFT GUI
-  - LCTRL
+  - {t: ESC, h: mouse}
   - LEFT SHIFT
-  - '&del_SYM'
+  - {t: DEL, h: symbols}
   - {t: BACKSPACE, h: tab}
   - SPACE
   - {t: ENTER, h: nav}
@@ -297,7 +297,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB3'
@@ -482,7 +482,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

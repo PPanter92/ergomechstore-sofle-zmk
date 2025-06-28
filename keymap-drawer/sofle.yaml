@@ -52,8 +52,8 @@ layers:
   - .
   - /
   - lower
-  - LEFT GUI
-  - {t: ESC, h: mouse}
+  - ESC
+  - {t: LGUI, h: mouse}
   - LEFT SHIFT
   - {t: DEL, h: symbols}
   - {t: BACKSPACE, h: tab}
@@ -251,6 +251,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -262,8 +263,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&msc SCRL_RIGHT'
   - '&msc SCRL_LEFT'
   - '&mmv MOVE_UP'
   - '&msc SCRL_RIGHT'

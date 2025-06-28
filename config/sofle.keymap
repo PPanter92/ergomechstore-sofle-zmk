@@ -17,7 +17,7 @@
 #define ADJUST 3
 
 &lt {
-    tapping-term-ms = <175>;
+    tapping-term-ms = <125>;
     flavor = "balanced";
     quick-tap-ms = <40>;
 };
@@ -151,9 +151,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BS_TAB";
             #binding-cells = <0>;
-            bindings = <&lt 4 BACKSPACE>, <&kp BACKSPACE>;
+            bindings = <&holdTap LALT BACKSPACE>, <&kp BACKSPACE>;
 
-            tapping-term-ms = <50>;
+            tapping-term-ms = <175>;
         };
 
         rt_NAV: rt_NAV {
@@ -162,16 +162,25 @@
             #binding-cells = <0>;
             bindings = <&lt 7 RET>, <&kp RET>;
 
-            tapping-term-ms = <50>;
+            tapping-term-ms = <125>;
         };
 
-        del_6: del_6 {
+        del_SYM: del_SYM {
             compatible = "zmk,behavior-tap-dance";
-            label = "DEL_6";
+            label = "DEL_SYM";
             #binding-cells = <0>;
             bindings = <&lt 6 DEL>, <&kp RET>;
 
             tapping-term-ms = <50>;
+        };
+
+        holdTap: holdTap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDTAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -189,11 +198,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp N1                &kp N2  &kp N3        &kp N4     &kp N5                                         &kp N6     &kp N7       &kp N8        &kp N9     &kp N0      &kp MINUS
-&kp TAB        &kp Q                 &kp W   &kp E         &kp R      &kp T                                          &kp Y      &kp U        &kp I         &kp O      &kp P       &kp LEFT_BRACKET
-&kp CAPS       &kp A                 &kp S   &kp D         &kp F      &kp G                                          &kp H      &kp J        &kp K         &kp L      &kp SEMI    &kp SQT
-&kp RIGHT_ALT  &kp NON_US_BACKSLASH  &kp Z   &kp X         &kp C      &kp V           &kp K_MUTE    &mkp MB3         &kp B      &kp N        &kp M         &kp COMMA  &kp PERIOD  &kp SLASH
-                                     &mo 1   &kp LEFT_GUI  &kp LCTRL  &kp LEFT_SHIFT  &lt 6 DEL     &lt 4 BACKSPACE  &kp SPACE  &lt 7 ENTER  &kp LEFT_ALT  &mo 2
+&kp GRAVE      &kp N1                &kp N2  &kp N3        &kp N4     &kp N5                                  &kp N6     &kp N7   &kp N8        &kp N9     &kp N0      &kp MINUS
+&kp TAB        &kp Q                 &kp W   &kp E         &kp R      &kp T                                   &kp Y      &kp U    &kp I         &kp O      &kp P       &kp LEFT_BRACKET
+&kp CAPS       &kp A                 &kp S   &kp D         &kp F      &kp G                                   &kp H      &kp J    &kp K         &kp L      &kp SEMI    &kp SQT
+&kp RIGHT_ALT  &kp NON_US_BACKSLASH  &kp Z   &kp X         &kp C      &kp V           &kp K_MUTE    &mkp MB3  &kp B      &kp N    &kp M         &kp COMMA  &kp PERIOD  &kp SLASH
+                                     &mo 1   &kp LEFT_GUI  &kp LCTRL  &kp LEFT_SHIFT  &del_SYM      &bs_TAB   &kp SPACE  &rt_NAV  &kp LEFT_ALT  &mo 2
             >;
 
             sensor-bindings =

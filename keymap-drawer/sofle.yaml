@@ -253,21 +253,21 @@ layers:
   - {t: ▽, type: trans}
   - '&msc SCRL_LEFT'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&msc SCRL_RIGHT'
-  - '&msc SCRL_LEFT'
   - '&mmv MOVE_UP'
-  - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_RIGHT'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_Y(-600)'
+  - '&mmv MOVE_RIGHT'
+  - '&mmv MOVE_DOWN'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -276,10 +276,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&msc SCRL_UP'
-  - '&mmv MOVE_LEFT'
-  - {t: ▽, type: trans}
-  - '&mmv MOVE_RIGHT'
-  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_X(-600)'
+  - '&mmv MOVE_Y(-300)'
+  - '&mmv MOVE_X(600)'
+  - '&mmv MOVE_Y(600)'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -290,10 +290,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&msc SCRL_DOWN'
+  - '&mmv MOVE_X(-300)'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_X(300)'
+  - '&mmv MOVE_Y(300)'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

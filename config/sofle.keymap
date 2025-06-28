@@ -153,7 +153,6 @@
             #binding-cells = <0>;
             bindings = <&lt 4 BACKSPACE>, <&kp BACKSPACE>;
 
-            flavor = "balanced";
             tapping-term-ms = <50>;
         };
 
@@ -163,7 +162,6 @@
             #binding-cells = <0>;
             bindings = <&lt 7 RET>, <&kp RET>;
 
-            flavor = "balanced";
             tapping-term-ms = <50>;
         };
 
@@ -173,7 +171,6 @@
             #binding-cells = <0>;
             bindings = <&lt 6 DEL>, <&kp RET>;
 
-            flavor = "balanced";
             tapping-term-ms = <50>;
         };
     };

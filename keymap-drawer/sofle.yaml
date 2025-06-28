@@ -338,7 +338,7 @@ layers:
   - {t: ▽, type: trans}
   - '&res'
   - Sft+Ctl+TAB
-  - {t: ▽, type: trans}
+  - Alt+TAB
   - Ctl+TAB
   - Gui+D
   - Ctl+W

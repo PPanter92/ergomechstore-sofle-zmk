@@ -143,27 +143,6 @@
     };
 
     behaviors {
-        bs_TAB: bs_TAB {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BS_TAB";
-            #binding-cells = <0>;
-            bindings = <&MoTapHp 5 BACKSPACE>, <&kp BACKSPACE>;
-        };
-
-        rt_NAV: rt_NAV {
-            compatible = "zmk,behavior-tap-dance";
-            label = "RT_NAV";
-            #binding-cells = <0>;
-            bindings = <&MoTap 8 RET>, <&kp RET>;
-        };
-
-        del_SYM: del_SYM {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DEL_SYM";
-            #binding-cells = <0>;
-            bindings = <&MoTap 7 DEL>, <&kp DEL>;
-        };
-
         MoTapHp: MoTapHp {
             compatible = "zmk,behavior-hold-tap";
             label = "MOTAPHP";
@@ -352,11 +331,11 @@
 
         symbols {
             bindings = <
-&trans  &trans  &trans             &trans  &trans  &trans                     &trans         &paran     &code       &kp RA(RIGHT_BRACKET)  &trans  &trans
-&trans  &trans  &trans             &trans  &trans  &trans                     &kp RA(MINUS)  &angle     &kp LS(N0)  &kp LS(MINUS)          &comO   &comC
-&trans  &trans  &kp LS(RA(MINUS))  &trans  &trans  &trans                     &abs           &curly     &kp RA(N7)  &kp RA(N0)             &quote  &squote
-&trans  &trans  &trans             &trans  &trans  &trans  &trans    &trans   &trans         &brackets  &kp RA(N8)  &kp RA(N9)             &trans  &trans
-                &trans             &trans  &trans  &trans  &trans    &kp DEL  &trans         &trans     &trans      &trans
+&trans    &trans  &trans             &trans  &trans  &trans                     &trans         &paran     &code       &kp RA(RIGHT_BRACKET)  &trans  &trans
+&trans    &trans  &trans             &trans  &trans  &trans                     &kp RA(MINUS)  &angle     &kp LS(N0)  &kp LS(MINUS)          &comO   &comC
+&kp CAPS  &trans  &kp LS(RA(MINUS))  &trans  &trans  &trans                     &abs           &curly     &kp RA(N7)  &kp RA(N0)             &quote  &squote
+&trans    &trans  &trans             &trans  &trans  &trans  &trans    &trans   &trans         &brackets  &kp RA(N8)  &kp RA(N9)             &trans  &trans
+                  &trans             &trans  &trans  &trans  &trans    &kp DEL  &trans         &trans     &trans      &trans
             >;
 
             label = "symbols";
@@ -367,7 +346,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans     &kp LC(HOME)  &kp K_APPLICATION  &kp LC(END)    &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp HOME   &kp LC(LEFT)  &kp UP_ARROW       &kp LC(RIGHT)  &kp END    &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp PG_UP  &kp LEFT      &kp LS(TAB)        &kp RIGHT      &kp DOWN   &kp TAB
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PG_DN  &kp LC(A)     &kp LC(X)          &kp LC(C)      &kp LC(V)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PG_DN  &kp LC(A)     &kp LC(X)          &kp LC(C)      &kp LC(V)  &kp INS
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans        &trans             &trans
             >;
 

@@ -452,7 +452,7 @@ layers:
   - Sft+-
   - '&comO'
   - '&comC'
-  - {t: ▽, type: trans}
+  - CAPS
   - {t: ▽, type: trans}
   - Sft+AltGr+-
   - {t: ▽, type: trans}
@@ -538,7 +538,7 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - {t: ▽, type: trans}
+  - INS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

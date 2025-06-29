@@ -58,7 +58,7 @@ layers:
   - {t: DEL, h: symbols}
   - {t: BACKSPACE, h: tab}
   - SPACE
-  - {t: ENTER, h: nav}
+  - '&nav_word 8'
   - LEFT ALT
   - raise
   lower:
@@ -546,7 +546,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:

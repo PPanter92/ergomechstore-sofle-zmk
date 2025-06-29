@@ -53,7 +53,7 @@ layers:
   - /
   - lower
   - ESC
-  - {t: LGUI, h: mouse}
+  - {t: LGUI, h: '&ms_word 4'}
   - LEFT SHIFT
   - {t: DEL, h: symbols}
   - {t: BACKSPACE, h: tab}
@@ -297,7 +297,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB3'

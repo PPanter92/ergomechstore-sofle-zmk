@@ -201,14 +201,33 @@
       nav_word: nav_word {
           compatible = "zmk,behavior-auto-layer";
           #binding-cells = <1>;
-          continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP>;
+          continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP HOME END TAB>;
           ignore-modifiers;
         };
 
-        MoWord: MoWord {
+      ms_word: ms_word {
+          compatible = "zmk,behavior-auto-layer";
+          #binding-cells = <1>;
+          continue-list = <MOVE_LEFT MOVE_UP MOVE_RIGHT MOVE_DOWN MOVE_X MOVE_Y SCRL_UP SCRL DOWN MB1 MB2 MB3>;
+          ignore-modifiers;
+        };
+
+        navWord: navWord {
             compatible = "zmk,behavior-hold-tap";
-            label = "MOWORD";
+            label = "NAVWORD";
             bindings = <&nav_word>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+        };
+
+        msWord: msWord {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MSWORD";
+            bindings = <&ms_word>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;

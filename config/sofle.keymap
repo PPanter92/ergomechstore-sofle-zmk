@@ -220,7 +220,7 @@
         ms_word: ms_word {
           compatible = "zmk,behavior-auto-layer";
           #binding-cells = <1>;
-          continue-list = <MOVE_LEFT MOVE_UP MOVE_RIGHT MOVE_DOWN MOVE_X MOVE_Y SCRL_UP SCRL DOWN MB1 MB2 MB3>;
+          continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP HOME END TAB>;
           ignore-modifiers;
         };
 

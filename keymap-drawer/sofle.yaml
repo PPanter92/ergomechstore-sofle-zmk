@@ -53,12 +53,12 @@ layers:
   - /
   - lower
   - ESC
-  - {t: LGUI, h: '&ms_word 4'}
+  - {t: LGUI, h: mouse}
   - LEFT SHIFT
   - {t: DEL, h: symbols}
   - {t: BACKSPACE, h: tab}
   - SPACE
-  - '&nav_word'
+  - {t: ENTER, h: nav}
   - LEFT ALT
   - raise
   lower:
@@ -297,7 +297,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB3'
@@ -546,7 +546,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:

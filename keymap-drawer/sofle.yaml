@@ -58,7 +58,7 @@ layers:
   - {t: DEL, h: symbols}
   - {t: BACKSPACE, h: tab}
   - SPACE
-  - {t: RET, h: '&nav_word 8'}
+  - '&nav_word'
   - LEFT ALT
   - raise
   lower:

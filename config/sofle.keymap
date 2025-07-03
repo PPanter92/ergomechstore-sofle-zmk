@@ -265,7 +265,7 @@
 &kp TAB        &kp Q                 &kp W              &kp E           &kp R            &kp T                                                 &kp Y      &kp U            &kp I           &kp O              &kp P                  &kp LEFT_BRACKET
 &kp CAPS       &HRM_R LGUI A         &HRM_R LEFT_ALT S  &HRM_R LCTRL D  &HRM_R LSHIFT F  &kp G                                                 &kp H      &HRM_L RSHIFT J  &HRM_L RCTRL K  &HRM_L LEFT_ALT L  &HRM_L RGUI SEMICOLON  &kp SQT
 &kp RIGHT_ALT  &kp NON_US_BACKSLASH  &kp Z              &kp X           &kp C            &kp V           &kp K_MUTE      &mkp MB3              &kp B      &kp N            &kp M           &kp COMMA          &kp PERIOD             &kp SLASH
-                                     &mo 1              &kp ESC         &MoTap 4 LGUI    &kp LEFT_SHIFT  &MoTap 7 DEL    &MoTapHp 5 BACKSPACE  &kp SPACE  &MoTap 8 ENTER   &kp LEFT_ALT    &mo 2
+                                     &mo 1              &kp ESC         &MoTap 4 LGUI    &kp LEFT_SHIFT  &MoTap 8 DEL    &MoTapHp 5 BACKSPACE  &kp SPACE  &MoTap 9 ENTER   &kp LEFT_ALT    &mo 2
             >;
 
             sensor-bindings =
@@ -350,8 +350,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1           &mkp MB3     &mkp MB2     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &max    &kp LS(LC(PG_UP))  &lm 6 LALT   &kp K_APP    &trans     &kp LA(F4)
-&trans  &trans  &trans  &trans  &trans  &trans                    &res    &kp LS(LC(TAB))    &kp LA(TAB)  &kp LC(TAB)  &kp LG(D)  &kp LC(W)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &min    &trans             &trans       &trans       &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &res    &kp LS(LC(TAB))    &lm 7 LCTRL  &kp LC(TAB)  &kp LG(D)  &kp LC(W)
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &min    &kp LA(TAB)        &trans       &trans       &trans     &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans       &trans
             >;
 
@@ -368,6 +368,17 @@
             >;
 
             label = "tab2";
+        };
+
+        tab3 {
+            label = "tab3";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans         &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans         &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(PG_UP)  &trans  &kp PAGE_DOWN  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans  &trans         &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans  &trans
+            >;
         };
 
         symbols {

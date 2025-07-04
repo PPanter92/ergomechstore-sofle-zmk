@@ -395,11 +395,11 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans     &kp LC(HOME)  &kp K_APPLICATION  &kp LC(END)    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp HOME   &kp LC(LEFT)  &kp UP_ARROW       &kp LC(RIGHT)  &kp END    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp PG_UP  &kp LEFT      &kp LS(TAB)        &kp RIGHT      &kp DOWN   &kp TAB
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PG_DN  &kp LC(A)     &kp LC(X)          &kp LC(C)      &kp LC(V)  &kp INS
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans        &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans     &kp LC(HOME)   &kp K_APPLICATION  &kp LC(END)    &trans     &kp INS
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp HOME   &kp LC(LEFT)   &kp UP_ARROW       &kp LC(RIGHT)  &kp END    &kp LC(V)
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp PG_UP  &kp LEFT       &kp LS(TAB)        &kp RIGHT      &kp DOWN   &kp TAB
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PG_DN  &kp BACKSPACE  &kp DEL            &kp LC(A)      &kp LC(X)  &kp LC(C)
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans         &trans             &trans
             >;
 
             label = "nav";

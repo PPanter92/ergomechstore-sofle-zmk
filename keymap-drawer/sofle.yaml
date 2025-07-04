@@ -561,7 +561,7 @@ layers:
   - APPLICATION
   - Ctl+END
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - INS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -573,7 +573,7 @@ layers:
   - UP ARROW
   - Ctl+RIGHT
   - END
-  - {t: ▽, type: trans}
+  - Ctl+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -595,11 +595,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG DN
+  - BACKSPACE
+  - DEL
   - Ctl+A
   - Ctl+X
   - Ctl+C
-  - Ctl+V
-  - INS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

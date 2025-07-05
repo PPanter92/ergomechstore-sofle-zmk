@@ -95,7 +95,7 @@
             label = "COMO";
         };
 
-        comC: comC {
+        comommentClose: comC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(RIGHT_BRACKET) &kp LS(N7)>;
@@ -142,6 +142,55 @@
             #binding-cells = <0>;
             bindings = <&kp LA(SPACE) &kp R>;
             label = "RES";
+        };
+
+        sin: sin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp I &kp N &kp LS(N8) &kp LS(N9) &kp LEFT>;
+            label = "SIN";
+        };
+
+        cos: cos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp O &kp S &kp LS(N8) &kp LS(N9) &kp LEFT>;
+            label = "COS";
+        };
+
+        tan: tan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp A &kp N &kp LS(N8) &kp LS(N9) &kp LEFT>;
+            label = "TAN";
+        };
+
+        sqrt: sqrt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp Q &kp R &kp T &kp LS(N8) &kp LS(N9) &kp LEFT>;
+            label = "SQRT";
+        };
+
+        hoch: hoch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(GRAVE) &kp LS(N8) &kp LS(N9) &kp LEFT>;
+            label = "HOCH";
+        };
+
+        exp: exp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp X &kp P &kp LS(N8) &kp LS(N9) &kp LEFT>;
+            label = "EXP";
+        };
+
+        ln: ln {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp N &kp LS(N8) &kp LS(N9) &kp LEFT>;
+            label = "LN";
         };
     };
 
@@ -383,11 +432,11 @@
 
         symbols {
             bindings = <
-&trans    &trans  &trans             &trans  &trans  &trans                     &trans         &paran     &code       &kp RA(RIGHT_BRACKET)  &trans  &trans
-&trans    &trans  &trans             &trans  &trans  &trans                     &kp RA(MINUS)  &angle     &kp LS(N0)  &kp LS(MINUS)          &comO   &comC
-&kp CAPS  &trans  &kp LS(RA(MINUS))  &trans  &trans  &trans                     &abs           &curly     &kp RA(N7)  &kp RA(N0)             &quote  &squote
-&trans    &trans  &trans             &trans  &trans  &trans  &trans    &trans   &trans         &brackets  &kp RA(N8)  &kp RA(N9)             &trans  &trans
-                  &trans             &trans  &trans  &trans  &trans    &kp DEL  &trans         &trans     &trans      &trans
+&trans    &trans        &trans        &trans     &trans          &trans                           &trans         &paran     &code       &kp RA(RIGHT_BRACKET)  &comO            &kp EQUAL
+&trans    &kp A         &sin          &cos       &tan            &trans                           &kp RA(MINUS)  &angle     &kp LS(N0)  &kp LS(MINUS)          &comommentClose  &kp RIGHT_BRACKET
+&kp CAPS  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans                           &abs           &curly     &kp RA(N7)  &kp RA(N0)             &quote           &kp NON_US_HASH
+&kp RALT  &hoch         &sqrt         &exp       &ln             &trans  &trans    &trans         &trans         &brackets  &kp RA(N8)  &kp RA(N9)             &squote          &trans
+                        &trans        &trans     &trans          &trans  &trans    &kp BACKSPACE  &kp SPACE      &kp DEL    &trans      &trans
             >;
 
             label = "symbols";

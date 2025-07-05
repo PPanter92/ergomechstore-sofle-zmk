@@ -499,37 +499,37 @@ layers:
   - '&paran'
   - '&code'
   - AltGr+]
+  - '&comO'
+  - '='
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - A
+  - '&sin'
+  - '&cos'
+  - '&tan'
   - {t: ▽, type: trans}
   - AltGr+-
   - '&angle'
   - Sft+0
   - Sft+-
-  - '&comO'
-  - '&comC'
+  - '&comommentClose'
+  - ']'
   - CAPS
-  - {t: ▽, type: trans}
-  - Sft+AltGr+-
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT GUI
+  - LEFT ALT
+  - LCTRL
+  - LEFT SHIFT
   - {t: ▽, type: trans}
   - '&abs'
   - '&curly'
   - AltGr+7
   - AltGr+0
   - '&quote'
-  - '&squote'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '#'
+  - RALT
+  - '&hoch'
+  - '&sqrt'
+  - '&exp'
+  - '&ln'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -537,16 +537,16 @@ layers:
   - '&brackets'
   - AltGr+8
   - AltGr+9
-  - {t: ▽, type: trans}
+  - '&squote'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - BACKSPACE
+  - SPACE
   - DEL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   nav:

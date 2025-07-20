@@ -31,11 +31,6 @@
             if-layers = <1 2>;
             then-layer = <3>;
         };
-
-        greek_layer {
-            if-layers = <8 5>;
-            then-layer = <9>;
-        };
     };
 
     macros {
@@ -313,6 +308,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
+            hold-trigger-key-positions = <55>;
         };
 
         nav_word: nav_word {
@@ -469,7 +465,7 @@
 &trans  &trans  &trans            &trans           &trans       &trans                    &max    &kp LS(LC(PG_UP))  &lm 6 LALT   &kp K_APP    &trans     &kp LA(F4)
 &trans  &trans  &trans            &trans           &trans       &trans                    &res    &kp LS(LC(TAB))    &lm 7 LCTRL  &kp LC(TAB)  &kp LG(D)  &kp LC(W)
 &trans  &trans  &trans            &trans           &trans       &trans  &trans    &trans  &min    &kp LA(TAB)        &trans       &trans       &trans     &trans
-                &trans            &trans           &trans       &trans  &trans    &trans  &trans  &trans             &trans       &trans
+                &trans            &trans           &trans       &trans  &mo 9     &trans  &trans  &trans             &trans       &trans
             >;
 
             label = "tab";
@@ -504,7 +500,7 @@
 &trans    &kp A         &sin              &cos             &tan            &frac                     &kp RA(MINUS)  &angle     &kp LS(N0)  &kp LS(MINUS)          &comommentClose  &kp RIGHT_BRACKET
 &kp CAPS  &kp LEFT_GUI  &kp LEFT_ALT      &kp LCTRL        &kp LEFT_SHIFT  &sHoch                    &abs           &curly     &kp RA(N7)  &kp RA(N0)             &quote           &kp NON_US_HASH
 &kp RALT  &trans        &sqrt             &exp             &ln             &hoch   &trans    &trans  &trans         &brackets  &kp RA(N8)  &kp RA(N9)             &squote          &kp LS(SLASH)
-                        &trans            &trans           &trans          &trans  &trans    &trans  &kp SPACE      &kp DEL    &trans      &trans
+                        &trans            &trans           &trans          &trans  &trans    &mo 9   &kp SPACE      &kp DEL    &trans      &trans
             >;
 
             label = "symbols";

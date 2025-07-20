@@ -31,6 +31,11 @@
             if-layers = <1 2>;
             then-layer = <3>;
         };
+
+        greek_layer {
+            if-layers = <8 5>;
+            then-layer = <9>;
+        };
     };
 
     macros {
@@ -192,6 +197,69 @@
             bindings = <&kp L &kp N &kp LS(N8) &kp LS(N9) &kp LEFT>;
             label = "LN";
         };
+
+        latexParanOpen: latexParanOpen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(MINUS) &kp L &kp E &kp F &kp T &kp LS(N8)>;
+            label = "LATEXPARAN";
+        };
+
+        latexParanClose: latexParanClose {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(MINUS) &kp R &kp I &kp G &kp H &kp T &kp LS(N9)>;
+            label = "LATEXPARANCLOSE";
+        };
+
+        latexParan: latexParan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&latexParanOpen &latexParanClose>;
+            label = "LATEXPARAN";
+        };
+
+        alpha: alpha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(MINUS) &kp A &kp L &kp P &kp H &kp A>;
+            label = "ALPHA";
+        };
+
+        beta: beta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(MINUS) &kp B &kp E &kp T &kp A>;
+            label = "BETA";
+        };
+
+        gamma: gamma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(MINUS) &kp G &kp A &kp M &kp M &kp A>;
+            label = "GAMMA";
+        };
+
+        delta: delta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(MINUS) &kp D &kp E &kp L &kp T &kp A>;
+            label = "DELTA";
+        };
+
+        sHoch: sHoch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp SPACE>;
+            label = "SHOCH";
+        };
+
+        frac: frac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(MINUS) &kp F &kp R &kp A &kp C &kp RA(N7) &kp RA(N0) &kp RA(N7) &kp RA(N0) &kp LEFT &kp LEFT_ARROW &kp LEFT_ARROW>;
+            label = "FRAC";
+        };
     };
 
     behaviors {
@@ -314,7 +382,7 @@
 &kp TAB        &kp Q                 &kp W              &kp E           &kp R            &kp T                                                 &kp Y      &kp U            &kp I           &kp O              &kp P                  &kp LEFT_BRACKET
 &kp CAPS       &HRM_R LGUI A         &HRM_R LEFT_ALT S  &HRM_R LCTRL D  &HRM_R LSHIFT F  &kp G                                                 &kp H      &HRM_L RSHIFT J  &HRM_L RCTRL K  &HRM_L LEFT_ALT L  &HRM_L RGUI SEMICOLON  &kp SQT
 &kp RIGHT_ALT  &kp NON_US_BACKSLASH  &kp Z              &kp X           &kp C            &kp V           &kp K_MUTE      &mkp MB3              &kp B      &kp N            &kp M           &kp COMMA          &kp PERIOD             &kp SLASH
-                                     &mo 1              &kp ESC         &MoTap 4 LGUI    &kp LEFT_SHIFT  &MoTap 8 DEL    &MoTapHp 5 BACKSPACE  &kp SPACE  &MoTap 9 ENTER   &kp LEFT_ALT    &mo 2
+                                     &mo 1              &kp ESC         &MoTap 4 LGUI    &kp LEFT_SHIFT  &MoTap 8 DEL    &MoTapHp 5 BACKSPACE  &kp SPACE  &MoTap 10 ENTER  &kp LEFT_ALT    &mo 2
             >;
 
             sensor-bindings =
@@ -397,11 +465,11 @@
 
         tab {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1           &mkp MB3     &mkp MB2     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &max    &kp LS(LC(PG_UP))  &lm 6 LALT   &kp K_APP    &trans     &kp LA(F4)
-&trans  &trans  &trans  &trans  &trans  &trans                    &res    &kp LS(LC(TAB))    &lm 7 LCTRL  &kp LC(TAB)  &kp LG(D)  &kp LC(W)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &min    &kp LA(TAB)        &trans       &trans       &trans     &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans       &trans
+&trans  &trans  &latexParanClose  &latexParanOpen  &latexParan  &trans                    &trans  &mkp MB1           &mkp MB3     &mkp MB2     &trans     &trans
+&trans  &trans  &trans            &trans           &trans       &trans                    &max    &kp LS(LC(PG_UP))  &lm 6 LALT   &kp K_APP    &trans     &kp LA(F4)
+&trans  &trans  &trans            &trans           &trans       &trans                    &res    &kp LS(LC(TAB))    &lm 7 LCTRL  &kp LC(TAB)  &kp LG(D)  &kp LC(W)
+&trans  &trans  &trans            &trans           &trans       &trans  &trans    &trans  &min    &kp LA(TAB)        &trans       &trans       &trans     &trans
+                &trans            &trans           &trans       &trans  &trans    &trans  &trans  &trans             &trans       &trans
             >;
 
             label = "tab";
@@ -432,14 +500,26 @@
 
         symbols {
             bindings = <
-&trans    &trans        &trans        &trans     &trans          &trans                           &trans         &paran     &code       &kp RA(RIGHT_BRACKET)  &comO            &kp EQUAL
-&trans    &kp A         &sin          &cos       &tan            &trans                           &kp RA(MINUS)  &angle     &kp LS(N0)  &kp LS(MINUS)          &comommentClose  &kp RIGHT_BRACKET
-&kp CAPS  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans                           &abs           &curly     &kp RA(N7)  &kp RA(N0)             &quote           &kp NON_US_HASH
-&kp RALT  &hoch         &sqrt         &exp       &ln             &trans  &trans    &trans         &trans         &brackets  &kp RA(N8)  &kp RA(N9)             &squote          &trans
-                        &trans        &trans     &trans          &trans  &trans    &kp BACKSPACE  &kp SPACE      &kp DEL    &trans      &trans
+&trans    &trans        &latexParanClose  &latexParanOpen  &latexParan     &trans                           &trans         &paran     &code       &kp RA(RIGHT_BRACKET)  &comO            &kp EQUAL
+&trans    &kp A         &sin              &cos             &tan            &frac                            &kp RA(MINUS)  &angle     &kp LS(N0)  &kp LS(MINUS)          &comommentClose  &kp RIGHT_BRACKET
+&kp CAPS  &kp LEFT_GUI  &kp LEFT_ALT      &kp LCTRL        &kp LEFT_SHIFT  &sHoch                           &abs           &curly     &kp RA(N7)  &kp RA(N0)             &quote           &kp NON_US_HASH
+&kp RALT  &trans        &sqrt             &exp             &ln             &hoch   &trans    &trans         &trans         &brackets  &kp RA(N8)  &kp RA(N9)             &squote          &kp LS(SLASH)
+                        &trans            &trans           &trans          &trans  &trans    &kp BACKSPACE  &kp SPACE      &kp DEL    &trans      &trans
             >;
 
             label = "symbols";
+        };
+
+        greek {
+            bindings = <
+&trans  &trans  &latexParanClose  &latexParanOpen  &latexParan  &trans                    &trans  &latexParan  &latexParanOpen  &latexParanClose  &trans  &trans
+&trans  &trans  &trans            &trans           &trans       &trans                    &trans  &trans       &trans           &trans            &trans  &trans
+&trans  &alpha  &trans            &delta           &trans       &gamma                    &trans  &trans       &trans           &trans            &trans  &trans
+&trans  &trans  &trans            &trans           &trans       &trans  &trans    &trans  &beta   &trans       &trans           &trans            &trans  &trans
+                &trans            &trans           &trans       &trans  &trans    &trans  &trans  &trans       &trans           &trans
+            >;
+
+            label = "greek";
         };
 
         nav {

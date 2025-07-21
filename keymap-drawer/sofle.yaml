@@ -238,8 +238,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -308,9 +308,9 @@ layers:
   tab:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&latexParanClose'
+  - '&latexParanOpen'
+  - '&latexParan'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
@@ -360,7 +360,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - greek
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -491,9 +491,9 @@ layers:
   symbols:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&latexParanClose'
+  - '&latexParanOpen'
+  - '&latexParan'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&paran'
@@ -506,7 +506,7 @@ layers:
   - '&sin'
   - '&cos'
   - '&tan'
-  - {t: ▽, type: trans}
+  - '&frac'
   - AltGr+-
   - '&angle'
   - Sft+0
@@ -518,7 +518,7 @@ layers:
   - LEFT ALT
   - LCTRL
   - LEFT SHIFT
-  - {t: ▽, type: trans}
+  - '&sHoch'
   - '&abs'
   - '&curly'
   - AltGr+7
@@ -526,11 +526,11 @@ layers:
   - '&quote'
   - '#'
   - RALT
-  - '&hoch'
+  - {t: ▽, type: trans}
   - '&sqrt'
   - '&exp'
   - '&ln'
-  - {t: ▽, type: trans}
+  - '&hoch'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -538,17 +538,78 @@ layers:
   - AltGr+8
   - AltGr+9
   - '&squote'
-  - {t: ▽, type: trans}
+  - Sft+/
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - BACKSPACE
+  - greek
   - SPACE
   - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  greek:
+  - ''
+  - ''
+  - '&latexParanClose'
+  - '&latexParanOpen'
+  - '&latexParan'
+  - ''
+  - ''
+  - '&latexParan'
+  - '&latexParanOpen'
+  - '&latexParanClose'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&alpha'
+  - ''
+  - '&delta'
+  - ''
+  - '&gamma'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&beta'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
   nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

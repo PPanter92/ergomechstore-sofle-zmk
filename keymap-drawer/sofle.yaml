@@ -308,9 +308,9 @@ layers:
   tab:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&latexParanClose'
-  - '&latexParanOpen'
-  - '&latexParan'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
@@ -489,11 +489,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   symbols:
+  - Sft+=
+  - AltGr+Q
   - {t: ▽, type: trans}
+  - AltGr+E
   - {t: ▽, type: trans}
-  - '&latexParanClose'
-  - '&latexParanOpen'
-  - '&latexParan'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&paran'
@@ -501,7 +501,7 @@ layers:
   - AltGr+]
   - '&comO'
   - '='
-  - {t: ▽, type: trans}
+  - Sft+]
   - A
   - '&sin'
   - '&cos'
@@ -513,7 +513,7 @@ layers:
   - Sft+-
   - '&comommentClose'
   - ']'
-  - CAPS
+  - Sft+#
   - LEFT GUI
   - LEFT ALT
   - LCTRL
@@ -526,20 +526,20 @@ layers:
   - '&quote'
   - '#'
   - RALT
-  - {t: ▽, type: trans}
+  - AltGr+\
   - '&sqrt'
   - '&exp'
   - '&ln'
   - '&hoch'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - AltGr+\
   - '&brackets'
   - AltGr+8
   - AltGr+9
   - '&squote'
   - Sft+/
-  - {t: ▽, type: trans}
+  - CAPS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -552,9 +552,9 @@ layers:
   greek:
   - ''
   - ''
-  - '&latexParanClose'
-  - '&latexParanOpen'
-  - '&latexParan'
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - '&latexParan'

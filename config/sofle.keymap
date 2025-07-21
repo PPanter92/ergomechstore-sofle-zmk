@@ -210,7 +210,7 @@
         latexParan: latexParan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(MINUS) &kp L &kp E &kp F &kp T &kp LS(N8) &kp RA(MINUS) &kp R &kp I &kp G &kp H &kp T &kp LS(N9) &kp LC(LEFT_ARROW) &kp LC(LEFT_ARROW)>;
+            bindings = <&kp RA(MINUS) &kp L &kp E &kp F &kp T &kp LS(N8) &kp RA(MINUS) &kp R &kp I &kp G &kp H &kp T &kp LS(N9) &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT &kp LEFT_ARROW &kp LEFT_ARROW>;
             label = "LATEXPARAN";
         };
 
@@ -460,11 +460,11 @@
 
         tab {
             bindings = <
-&trans  &trans  &latexParanClose  &latexParanOpen  &latexParan  &trans                    &trans  &mkp MB1           &mkp MB3     &mkp MB2     &trans     &trans
-&trans  &trans  &trans            &trans           &trans       &trans                    &max    &kp LS(LC(PG_UP))  &lm 6 LALT   &kp K_APP    &trans     &kp LA(F4)
-&trans  &trans  &trans            &trans           &trans       &trans                    &res    &kp LS(LC(TAB))    &lm 7 LCTRL  &kp LC(TAB)  &kp LG(D)  &kp LC(W)
-&trans  &trans  &trans            &trans           &trans       &trans  &trans    &trans  &min    &kp LA(TAB)        &trans       &trans       &trans     &trans
-                &trans            &trans           &trans       &trans  &mo 9     &trans  &trans  &trans             &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1           &mkp MB3     &mkp MB2     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &max    &kp LS(LC(PG_UP))  &lm 6 LALT   &kp K_APP    &trans     &kp LA(F4)
+&trans  &trans  &trans  &trans  &trans  &trans                    &res    &kp LS(LC(TAB))    &lm 7 LCTRL  &kp LC(TAB)  &kp LG(D)  &kp LC(W)
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &min    &kp LA(TAB)        &trans       &trans       &trans     &trans
+                &trans  &trans  &trans  &trans  &mo 9     &trans  &trans  &trans             &trans       &trans
             >;
 
             label = "tab";
@@ -495,11 +495,11 @@
 
         symbols {
             bindings = <
-&trans    &trans        &latexParanClose  &latexParanOpen  &latexParan     &trans                    &trans         &paran     &code       &kp RA(RIGHT_BRACKET)  &comO            &kp EQUAL
-&trans    &kp A         &sin              &cos             &tan            &frac                     &kp RA(MINUS)  &angle     &kp LS(N0)  &kp LS(MINUS)          &comommentClose  &kp RIGHT_BRACKET
-&kp CAPS  &kp LEFT_GUI  &kp LEFT_ALT      &kp LCTRL        &kp LEFT_SHIFT  &sHoch                    &abs           &curly     &kp RA(N7)  &kp RA(N0)             &quote           &kp NON_US_HASH
-&kp RALT  &trans        &sqrt             &exp             &ln             &hoch   &trans    &trans  &trans         &brackets  &kp RA(N8)  &kp RA(N9)             &squote          &kp LS(SLASH)
-                        &trans            &trans           &trans          &trans  &trans    &mo 9   &kp SPACE      &kp DEL    &trans      &trans
+&kp RS(EQUAL)          &kp RA(Q)                 &trans        &kp RA(E)  &trans          &trans                    &trans                    &paran     &code       &kp RA(RIGHT_BRACKET)  &comO            &kp EQUAL
+&kp LS(RIGHT_BRACKET)  &kp A                     &sin          &cos       &tan            &frac                     &kp RA(MINUS)             &angle     &kp LS(N0)  &kp LS(MINUS)          &comommentClose  &kp RIGHT_BRACKET
+&kp LS(NUHS)           &kp LEFT_GUI              &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &sHoch                    &abs                      &curly     &kp RA(N7)  &kp RA(N0)             &quote           &kp NON_US_HASH
+&kp RALT               &kp RA(NON_US_BACKSLASH)  &sqrt         &exp       &ln             &hoch   &trans    &trans  &kp RA(NON_US_BACKSLASH)  &brackets  &kp RA(N8)  &kp RA(N9)             &squote          &kp LS(SLASH)
+                                                 &kp CAPS      &trans     &trans          &trans  &trans    &mo 9   &kp SPACE                 &kp DEL    &trans      &trans
             >;
 
             label = "symbols";
@@ -507,11 +507,11 @@
 
         greek {
             bindings = <
-&none  &none   &latexParanClose  &latexParanOpen  &latexParan  &none                   &none  &latexParan  &latexParanOpen  &latexParanClose  &none  &none
-&none  &none   &none             &none            &none        &none                   &none  &none        &none            &none             &none  &none
-&none  &alpha  &none             &delta           &none        &gamma                  &none  &none        &none            &none             &none  &none
-&none  &none   &none             &none            &none        &none   &none    &none  &beta  &none        &none            &none             &none  &none
-               &none             &none            &none        &none   &none    &none  &none  &none        &none            &none
+&none  &none   &none  &none   &none  &none                   &none  &latexParan  &latexParanOpen  &latexParanClose  &none  &none
+&none  &none   &none  &none   &none  &none                   &none  &none        &none            &none             &none  &none
+&none  &alpha  &none  &delta  &none  &gamma                  &none  &none        &none            &none             &none  &none
+&none  &none   &none  &none   &none  &none   &none    &none  &beta  &none        &none            &none             &none  &none
+               &none  &none   &none  &none   &none    &none  &none  &none        &none            &none
             >;
 
             label = "greek";

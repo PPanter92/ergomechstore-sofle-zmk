@@ -210,7 +210,7 @@
         latexParan: latexParan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&latexParanOpen &latexParanClose>;
+            bindings = <&kp RA(MINUS) &kp L &kp E &kp F &kp T &kp LS(N8) &kp R &kp I &kp G &kp H &kp T &kp LS(N9) &kp LC(LEFT_ARROW) &kp LC(LEFT_ARROW)>;
             label = "LATEXPARAN";
         };
 
@@ -245,7 +245,7 @@
         sHoch: sHoch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp SPACE>;
+            bindings = <&kp LS(GRAVE) &kp SPACE>;
             label = "SHOCH";
         };
 

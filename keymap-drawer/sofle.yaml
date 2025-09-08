@@ -25,17 +25,17 @@ layers:
   - O
   - P
   - '['
-  - CAPS
-  - {t: A, h: LGUI}
+  - ESC
+  - A
   - {t: S, h: LEFT ALT}
   - {t: D, h: LCTRL}
-  - {t: F, h: LSHIFT}
+  - {t: F, h: LEFT GUI}
   - G
   - H
-  - {t: J, h: RSHIFT}
+  - {t: J, h: RIGHT GUI}
   - {t: K, h: RCTRL}
   - {t: L, h: LEFT ALT}
-  - {t: ;, h: RGUI}
+  - ;
   - ''''
   - RIGHT ALT
   - \
@@ -330,7 +330,7 @@ layers:
   - APP
   - {t: ▽, type: trans}
   - Alt+F4
-  - {t: ▽, type: trans}
+  - CAPS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -671,6 +671,3 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-combos:
-- p: [20, 31]
-  k: ESCAPE

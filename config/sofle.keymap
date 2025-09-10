@@ -267,7 +267,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             flavor = "hold-preferred";
-            hold-trigger-key-positions = <20 32 18 30 44 19 31 33 34 7 9 8 21 23 35 54>;
+            hold-trigger-key-positions = <20 32 18 30 44 19 31 33 34 7 9 8 21 23 35 54 24 12 13 15 26 45>;
         };
 
         HRM_L: HRM_L {
@@ -349,7 +349,29 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <31 33>;
+        };
+
+        bsp {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <20 31>;
+        };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <20 33>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <15 28>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -452,11 +474,11 @@
 
         tab {
             bindings = <
-&trans    &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1           &mkp MB3     &mkp MB2     &trans     &trans
-&trans    &trans  &trans  &trans  &trans  &trans                    &max    &kp LS(LC(PG_UP))  &lm 6 LALT   &kp K_APP    &trans     &kp LA(F4)
-&kp CAPS  &trans  &trans  &trans  &trans  &trans                    &res    &kp LS(LC(TAB))    &lm 7 LCTRL  &kp LC(TAB)  &kp LG(D)  &kp LC(W)
-&trans    &trans  &trans  &trans  &trans  &trans  &trans    &trans  &min    &kp LA(TAB)        &trans       &trans       &trans     &trans
-                  &trans  &trans  &trans  &trans  &mo 9     &trans  &trans  &trans             &trans       &trans
+&trans                 &trans     &trans             &trans     &trans  &trans                    &trans  &mkp MB1           &mkp MB3     &mkp MB2     &trans     &trans
+&kp RA(RIGHT_BRACKET)  &kp RA(Q)  &trans             &kp RA(E)  &trans  &trans                    &max    &kp LS(LC(PG_UP))  &lm 6 LALT   &kp K_APP    &trans     &kp LA(F4)
+&kp CAPS               &trans     &kp LS(RA(MINUS))  &trans     &trans  &trans                    &res    &kp LS(LC(TAB))    &lm 7 LCTRL  &kp LC(TAB)  &kp LG(D)  &kp LC(W)
+&trans                 &trans     &trans             &trans     &trans  &trans  &trans    &trans  &min    &kp LA(TAB)        &trans       &trans       &trans     &trans
+                                  &trans             &trans     &trans  &trans  &mo 9     &trans  &trans  &trans             &trans       &trans
             >;
 
             label = "tab";
@@ -477,11 +499,11 @@
         tab3 {
             label = "tab3";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans         &trans  &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans         &trans  &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(PG_UP)  &trans  &kp PAGE_DOWN  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans  &trans         &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp PG_UP    &trans  &kp PG_DN  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(TAB)  &trans  &kp TAB    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans  &trans     &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans  &trans
             >;
         };
 

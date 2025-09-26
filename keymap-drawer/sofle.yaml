@@ -246,11 +246,11 @@ layers:
   - {type: held}
   mouse:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - '&msc SCRL_LEFT'
   - {t: ▽, type: trans}
   - '&mmv MOVE_UP'
@@ -258,8 +258,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - OUT BLE
+  - OUT USB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -318,10 +318,10 @@ layers:
   - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - AltGr+]
+  - AltGr+Q
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - AltGr+E
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&max'
@@ -332,7 +332,7 @@ layers:
   - Alt+F4
   - CAPS
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+AltGr+-
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -447,6 +447,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - PG UP
+  - {t: ▽, type: trans}
+  - PG DN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -456,12 +459,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Sft+TAB
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Sft+PG UP
-  - {t: ▽, type: trans}
-  - PAGE DOWN
+  - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -671,3 +671,12 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [31, 33]
+  k: ESCAPE
+- p: [20, 31]
+  k: BACKSPACE
+- p: [20, 33]
+  k: DEL
+- p: [15, 28]
+  k: ENTER

@@ -11,6 +11,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -462,11 +463,11 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                      &msc SCRL_LEFT   &trans             &mmv MOVE_UP       &trans            &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans                      &msc SCRL_RIGHT  &mmv MOVE_LEFT     &mmv MOVE_Y(-600)  &mmv MOVE_RIGHT   &mmv MOVE_DOWN    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                      &msc SCRL_UP     &mmv MOVE_X(-600)  &mmv MOVE_Y(-300)  &mmv MOVE_X(600)  &mmv MOVE_Y(600)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &msc SCRL_DOWN   &mmv MOVE_X(-300)  &trans             &mmv MOVE_X(300)  &mmv MOVE_Y(300)  &trans
-                &trans  &trans  &trans  &trans  &trans    &mkp MB3  &mkp MB1         &mkp MB2           &trans             &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &msc SCRL_LEFT   &trans             &mmv MOVE_UP       &trans            &trans            &trans
+&trans  &out OUT_BLE  &out OUT_USB  &trans        &trans        &trans                            &msc SCRL_RIGHT  &mmv MOVE_LEFT     &mmv MOVE_Y(-600)  &mmv MOVE_RIGHT   &mmv MOVE_DOWN    &trans
+&trans  &trans        &trans        &trans        &trans        &trans                            &msc SCRL_UP     &mmv MOVE_X(-600)  &mmv MOVE_Y(-300)  &mmv MOVE_X(600)  &mmv MOVE_Y(600)  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans    &trans    &msc SCRL_DOWN   &mmv MOVE_X(-300)  &trans             &mmv MOVE_X(300)  &mmv MOVE_Y(300)  &trans
+                      &trans        &trans        &trans        &trans        &trans    &mkp MB3  &mkp MB1         &mkp MB2           &trans             &trans
             >;
 
             label = "mouse";

@@ -497,11 +497,11 @@
 
         tab {
             bindings = <
-&trans                 &trans     &trans             &trans     &trans  &trans                    &trans  &mkp MB1           &mkp MB3     &mkp MB2     &trans     &trans
-&kp RA(RIGHT_BRACKET)  &kp RA(Q)  &trans             &kp RA(E)  &trans  &trans                    &max    &kp LS(LC(PG_UP))  &lm 8 LALT   &kp K_APP    &trans     &kp LA(F4)
-&kp CAPS               &trans     &kp LS(RA(MINUS))  &trans     &trans  &trans                    &res    &kp LS(LC(TAB))    &lm 9 LCTRL  &kp LC(TAB)  &kp LG(D)  &kp LC(W)
-&trans                 &trans     &trans             &trans     &trans  &trans  &trans    &trans  &min    &kp LA(TAB)        &trans       &trans       &trans     &trans
-                                  &trans             &trans     &trans  &trans  &mo 14    &trans  &trans  &trans             &trans       &trans
+&trans                 &trans     &trans             &trans     &trans  &trans                    &trans  &mkp MB1         &mkp MB3     &mkp MB2           &trans     &trans
+&kp RA(RIGHT_BRACKET)  &kp RA(Q)  &trans             &kp RA(E)  &trans  &trans                    &max    &kp LC(PG_UP)    &lm 8 LALT   &kp LC(PAGE_DOWN)  &kp K_APP  &kp LA(F4)
+&kp CAPS               &trans     &kp LS(RA(MINUS))  &trans     &trans  &trans                    &res    &kp LS(LC(TAB))  &lm 9 LCTRL  &kp LC(TAB)        &kp LG(D)  &kp LC(W)
+&trans                 &trans     &trans             &trans     &trans  &trans  &trans    &trans  &min    &kp LA(TAB)      &trans       &trans             &trans     &trans
+                                  &trans             &trans     &trans  &trans  &mo 14    &trans  &trans  &trans           &trans       &trans
             >;
 
             label = "tab";
@@ -522,11 +522,11 @@
         tab3 {
             label = "tab3";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp PG_UP    &trans  &kp PG_DN  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(TAB)  &trans  &kp TAB    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans  &trans     &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans         &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(PG_UP)  &trans  &kp LS(PG_DN)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(TAB)    &trans  &kp TAB        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans  &trans         &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans  &trans
             >;
         };
 

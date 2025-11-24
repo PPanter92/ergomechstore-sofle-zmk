@@ -501,7 +501,7 @@
 &kp RA(RIGHT_BRACKET)  &kp RA(Q)  &trans             &kp RA(E)  &trans  &trans                    &max    &kp LC(PG_UP)    &lm 8 LALT   &kp LC(PAGE_DOWN)  &kp K_APP  &kp LA(F4)
 &kp CAPS               &trans     &kp LS(RA(MINUS))  &trans     &trans  &trans                    &res    &kp LS(LC(TAB))  &lm 9 LCTRL  &kp LC(TAB)        &kp LG(D)  &kp LC(W)
 &trans                 &trans     &trans             &trans     &trans  &trans  &trans    &trans  &min    &kp LA(TAB)      &trans       &trans             &trans     &trans
-                                  &trans             &trans     &trans  &trans  &mo 14    &trans  &trans  &trans           &trans       &trans
+                                  &trans             &trans     &trans  &trans  &mo 11    &trans  &trans  &trans           &trans       &trans
             >;
 
             label = "tab";
@@ -536,7 +536,7 @@
 &kp LS(RIGHT_BRACKET)  &kp RA(Q)                 &trans  &kp RA(E)  &kp CAPS  &frac                     &kp RA(MINUS)             &angle     &kp LS(N0)  &kp LS(MINUS)          &comommentClose  &kp RIGHT_BRACKET
 &kp LS(NUHS)           &kp A                     &sin    &cos       &tan      &sHoch                    &abs                      &curly     &kp RA(N7)  &kp RA(N0)             &quote           &kp NON_US_HASH
 &kp RALT               &kp RA(NON_US_BACKSLASH)  &sqrt   &exp       &ln       &hoch   &trans    &trans  &kp RA(NON_US_BACKSLASH)  &brackets  &kp RA(N8)  &kp RA(N9)             &squote          &kp LS(SLASH)
-                                                 &trans  &trans     &trans    &trans  &trans    &mo 14  &kp SPACE                 &kp DEL    &trans      &trans
+                                                 &trans  &trans     &trans    &trans  &trans    &mo 11  &kp SPACE                 &kp DEL    &trans      &trans
             >;
 
             label = "symbols";

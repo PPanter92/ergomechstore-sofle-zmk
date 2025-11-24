@@ -37,7 +37,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - ;
   - ''''
-  - RIGHT ALT
+  - LEFT ALT
   - \
   - Z
   - X
@@ -52,14 +52,14 @@ layers:
   - .
   - /
   - lower
-  - ESC
-  - {t: LGUI, h: number}
+  - {t: RCTRL, h: media}
+  - {t: LGUI, h: mouse}
   - LEFT SHIFT
   - {t: DEL, h: symbols}
   - {t: BACKSPACE, h: tab}
   - SPACE
   - {t: ENTER, h: nav}
-  - LEFT ALT
+  - {t: number, h: toggle}
   - raise
   lower:
   - '&studio_unlock'
@@ -297,7 +297,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB3'
@@ -312,8 +312,8 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - AltGr+NUBS
+  - AltGr+\
+  - KP DIVIDE
   - Sft+8
   - Sft+9
   - {t: ▽, type: trans}
@@ -324,11 +324,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP DIVIDE
+  - KP MULTIPLY
   - KP 7
   - KP 8
   - KP 9
-  - KP SUBTRACT
+  - KP PLUS
   - {t: numbers2, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -340,7 +340,21 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - KP PLUS
+  - .
+  - ','
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 0
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP MINUS
   - Sft+-
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -350,21 +364,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP MULTIPLY
-  - KP 1
-  - KP 2
-  - KP 3
-  - .
-  - ','
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - KP 0
   - {t: ▽, type: trans}
   numbers2:
   - {t: ▽, type: trans}
@@ -415,11 +415,11 @@ layers:
   - '&ln'
   - '&exp'
   - '&sqrt'
+  - SCROLLLOCK
+  - KP NUM
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -447,10 +447,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&max'
-  - Sft+Ctl+PG UP
+  - Ctl+PG UP
   - '&lm 8 LALT'
+  - Ctl+PAGE DOWN
   - APP
-  - {t: ▽, type: trans}
   - Alt+F4
   - CAPS
   - {t: ▽, type: trans}
@@ -569,9 +569,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG UP
+  - Sft+PG UP
   - {t: ▽, type: trans}
-  - PG DN
+  - Sft+PG DN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -612,9 +612,9 @@ layers:
   - {t: ▽, type: trans}
   symbols:
   - Sft+=
-  - AltGr+Q
   - {t: ▽, type: trans}
-  - AltGr+E
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -624,10 +624,10 @@ layers:
   - '&comO'
   - '='
   - Sft+]
-  - A
-  - '&sin'
-  - '&cos'
-  - '&tan'
+  - AltGr+Q
+  - {t: ▽, type: trans}
+  - AltGr+E
+  - CAPS
   - '&frac'
   - AltGr+-
   - '&angle'
@@ -636,10 +636,10 @@ layers:
   - '&comommentClose'
   - ']'
   - Sft+#
-  - LEFT GUI
-  - LEFT ALT
-  - LCTRL
-  - LEFT SHIFT
+  - A
+  - '&sin'
+  - '&cos'
+  - '&tan'
   - '&sHoch'
   - '&abs'
   - '&curly'
@@ -661,7 +661,7 @@ layers:
   - AltGr+9
   - '&squote'
   - Sft+/
-  - CAPS
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -791,5 +791,66 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  media:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - VOL UP
+  - {t: ▽, type: trans}
+  - F7
+  - F8
+  - F9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - STOP
+  - PREV
+  - PLAY PAUSE
+  - NEXT
+  - MUTE
+  - {t: ▽, type: trans}
+  - F4
+  - F5
+  - F6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - VOL DN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
